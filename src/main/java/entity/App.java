@@ -18,5 +18,13 @@ public class App {
         Animal animal1 = (Animal) context.getBean("animal");
         animal1.writeName();
 
+        World world1 = (World) context.getBean("world");
+        world1.writeAnimal();
+
+        Cat cat = (Cat) context.getBean("cat");
+        cat.writeName();
+
+
+
     }
 }
