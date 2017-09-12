@@ -1,4 +1,4 @@
-package entity;
+package com.test.bu.entity;
 
 /**
  * Created by ELRIK on 07.09.2017.

@@ -3,15 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="animal" class="entity.Animal" init-method="init" destroy-method="destroy">
+    <bean id="animal" class="com.test.bu.entity.Animal" init-method="init" destroy-method="destroy">
         <property name="name" value="Hello2"/>
         <property name="age" value="14"/>
         <property name="lastName" value="last name"/>
     </bean>
 
-    <bean id="world" class="entity.World">
+    <bean id="world" class="com.test.bu.entity.World">
         <constructor-arg name="animal" ref="animal"/>
     </bean>
 
-    <bean id="cat" class="entity.Cat" parent="animal"/>
+    <bean id="cat" class="com.test.bu.entity.Cat"/>
 </beans>

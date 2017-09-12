@@ -1,3 +1,5 @@
+package com.test.bu;
+
 import org.joda.time.LocalDate;
 
 /**
